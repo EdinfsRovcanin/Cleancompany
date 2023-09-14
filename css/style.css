@@ -2,23 +2,19 @@
 	width: 89%;
 	margin: 0 auto;
     grid-template-columns: repeat(12, 1fr);
-    
 }
 
 header { 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #3E885A;
-        color: white;
-        font-weight:600;
-        
-        grid-column-start: 1;
-        grid-column-end: 13;
-        min-height: 50px;
-        border: 1px solid black;
-
-         
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3E885A;
+    color: white;
+    font-weight:600;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    min-height: 50px;
+    border: 1px solid black;   
 }
 
 #logo {
@@ -32,6 +28,7 @@ header {
     width: 200px;
     height: 100;
 }
+
 .nav {
     display: grid;
     grid-column-start: 1;
@@ -40,48 +37,36 @@ header {
 	
 }
 
-
 #meny {
-        grid-column-start: 3;
-        grid-column-end: 13;
-        /* border-left: 1px solid black; */
-        border-right: 1px solid black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-        
-    }
+    grid-column-start: 3;
+    grid-column-end: 13;
+    /* border-left: 1px solid black; */
+    border-right: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
 
-.knappar        {
+.knappar {
     display: flex;
     gap: 50px;
-    
-    
 }
        
-.knappar >li {
+.knappar > li {
     display: flex;
     /* border: 1px solid black; */
     width: 100px;
     height: 35px;   
     justify-content: center;
-    
-    
 }    
 
-.knappar >li:hover {
+.knappar > li:hover {
     border-bottom: 2px solid black;
-
 }
 
- #hem {
+#hem {
     text-decoration: none;
-
 } 
-
-
-
 
 #tjanster {
     text-decoration: none;
@@ -96,16 +81,14 @@ header {
     text-decoration: none;
 }
 
-
-
 main {
     grid-column-start: 1;
-        grid-column-end: 13;
-        grid-row-start: 3;
-        grid-row-end: 4 ;
-        min-height: 500px;
-        border: 1px solid black;
-        text-align: center;
+    grid-column-end: 13;
+    grid-row-start: 3;
+    grid-row-end: 4 ;
+    min-height: 500px;
+    border: 1px solid black;
+    text-align: center;
 }
 
 footer {
@@ -120,10 +103,10 @@ footer {
 }
 
 .del1   {
-        grid-column-start: 1;
-	    grid-column-end: 5;
-	    grid-row-start: 1;
-	    grid-row-end: 2 ;
+    grid-column-start: 1;
+	grid-column-end: 5;
+	grid-row-start: 1;
+	grid-row-end: 2 ;
 }
 
 .del2   {
