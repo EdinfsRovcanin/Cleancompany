@@ -9,7 +9,7 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: rgb(60, 211, 55);
+        background-color: #3E885A;
         color: white;
         font-weight:600;
         
@@ -116,6 +116,7 @@ footer {
 	border-left: 1px solid #333;
     border-right: 1px solid #333;
     border-bottom: 1px solid #333;
+    background-color: #3b992C;
 }
 
 .del1   {
