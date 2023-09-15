@@ -216,4 +216,18 @@ font-size: 45px;
    padding: 10px;
 }
 
-
+/*CONTENT MED BILDER*/
+.content, .content2 {
+    display: flex;
+    height: auto;
+}
+img{
+    width: 400px;
+}
+.text1, .text2{
+    padding: 20px;
+    text-align: center;
+}
+.content2 {
+   padding-top: 50px;
+}
