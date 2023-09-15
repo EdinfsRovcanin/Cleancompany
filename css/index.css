@@ -193,3 +193,25 @@ font-size: 45px;
     background-color: white;
     color: black;
 }
+
+/*BOXAR UNDER BANNER*/
+.boxar {
+    display: flex; 
+    flex-direction: row;
+}
+
+.box {
+    border: white 2px solid;
+    height: 150px;
+    flex: 1;
+    background-color: #3E885A;
+    text-align: center;
+}
+.box h2, p {
+    color: black;
+}
+.box p{
+   padding: 10px;
+}
+
+
