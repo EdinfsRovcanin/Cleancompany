@@ -1,18 +1,40 @@
 @import "variables.css";
 
-/* * {
-    box-sizing: border-box;
-    margin: 0px;
+* {
+    /* box-sizing: border-box; */
+    /* margin: 0px; */
+}
+
+/* #privat {
+    grid-area: privat;
+}
+
+#företag {
+    grid-area: företag;
 } */
 
-#wrap {
+.flex {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 30px;
+}
+
+#wrap {
+    display: grid;
+    /* grid-template-columns: repeat(4, 1fr); */
+    /* grid-template-rows: auto; */
+    gap: 30px 0px;
+    /* grid-template-areas: 
+    "privat privat företag företag"
+    ; */
+    /* justify-content: space-evenly; */
+    /* justify-items: center;
+    justify-content:space-evenly; */
+    /* margin-top: 5%; */
 }
 
 #wrap a {
     /* box-sizing: content-box; */
+    /* height: auto; */
     border-radius: 0px 0px 10px 10px;
     box-shadow: 0px 3px 10px 0 rgba(199, 199, 199, 0.678);
 }
@@ -30,6 +52,18 @@ a:visited {
 }
 
 [class*="bild"] {
-    width: 27vw;
+    min-width: 150px;
+    width: 30vw;
     border-radius: 4px;
+}
+
+/* main {
+    display: grid;
+} */
+
+#calm {
+    width: 100%;
+    height: 15vh;
+    object-fit: cover;
+    /* margin-top: 100px; */
 }
