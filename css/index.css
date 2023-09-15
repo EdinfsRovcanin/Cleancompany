@@ -202,10 +202,11 @@ font-size: 45px;
 
 .box {
     border: white 2px solid;
-    height: 150px;
+    height: auto;
     flex: 1;
     background-color: #3E885A;
     text-align: center;
+    padding: 15px;
 }
 .box h2, p {
     color: black;
