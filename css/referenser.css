@@ -1,2 +1,70 @@
 /* css till referenser */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    margin: 10%;
+}
+
+.pics{
+    height: 30%;
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.pics img{
+    align-items: center;
+    width: auto;
+    height: 60%; 
+    
+}
+
+
+
+.reviews{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 25%;
+
+    
+}
+
+
+
+.reviews img{
+    height: 100px;
+    width: auto;
+    margin: 50px 50px 15px 50px ;
+}
+
+
+.reviews h2 {
+    font-size: 23px;
+    height: max-content;
+    text-align: center;
+    width: 300px;
+
+}
+
+.reviews p {
+    font-size: 23px;
+    height: max-content;
+    text-align: center;
+    width: 300px;
+}
+
+
+
+.konsultation{
+    height: 15%;
+    background-color: #3f885a;
+    padding-top: 5%;
+    margin-bottom: 0;
+}
+
