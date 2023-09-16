@@ -2,17 +2,25 @@
 	margin: 0 auto;
     grid-template-columns: repeat(12, 1fr);
 }
-.bildruta1 img {
-    width: 100%;
-    height: 100%;
+
     /* object-fit: cover; Låter bilden täcka hela området utan att sträcka eller krossa proportionerna  */
+
+header { 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #3E885A;
+        color: white;
+        font-weight:600;
+        grid-column-start: 1;
+        grid-column-end: 13;
+        min-height: 50px;
+        border: 1px solid black;     
 }
 #adress {
     display: flex;
 }
-#adress p {
-    margin-left: 10px;
-}
+
 #telefon {
     display: flex;
 }
@@ -39,7 +47,6 @@
 }
 #instagram {
     display: flex;
-    align-items: center;
 }
 #instagram p{
     margin-left: 10px;
@@ -50,6 +57,10 @@
     height: 25px;
     margin-top: 10px;
     margin-left: 50px;  
+}
+.bildruta1 img {
+    width: 100%;
+    height: 100%;
 }
 .left3 {
     grid-column-start: 1;
