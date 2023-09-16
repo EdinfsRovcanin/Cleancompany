@@ -5,7 +5,7 @@
 
     /* object-fit: cover; Låter bilden täcka hela området utan att sträcka eller krossa proportionerna  */
 
-header { 
+/* header { 
         display: flex;
         justify-content: center;
         align-items: center;
@@ -14,9 +14,9 @@ header {
         font-weight:600;
         grid-column-start: 1;
         grid-column-end: 13;
-        min-height: 50px;
+        min-height: 30px;
         border: 1px solid black;     
-}
+} */
 #adress {
     display: flex;
 }
