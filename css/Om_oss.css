@@ -1,6 +1,6 @@
 /* grid-template-columns: */
 body{
-    background: #313131;
+    background: ;
 }
 
 main {
@@ -123,6 +123,7 @@ gap: 10px;
     min-width: auto; */
     background: #fff;
     border-radius: 25px;
+
 
 &:nth-child(1) {
     height: 50px;
