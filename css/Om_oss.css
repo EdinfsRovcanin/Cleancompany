@@ -117,6 +117,10 @@ section {
   align-items: center;
 }
 
+.companyInfoText {
+  font-size: 25px;
+}
+
 .mainContentImageRatio {
   width: 100%;
   height: auto;
@@ -169,12 +173,16 @@ section {
 }
 
 .cardText {
-  flex: 1;
   display: flex;
+  flex: 1;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  font-size: 20px;
 }
-
+.employeeCardNames {
+}
+em {
+}
 .greenBanner {
   display: flex;
   justify-content: center;
