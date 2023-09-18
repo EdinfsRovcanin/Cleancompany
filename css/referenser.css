@@ -7,20 +7,25 @@
 }
 
 h1{
-    margin: 10%;
+    margin: 7%;
 }
 
 .pics{
-    height: 30%;
+    height: 20%;
     display: inline-flex;
     justify-content: space-evenly;
     width: 100%;
+    
+
+
 }
 
 .pics img{
     align-items: center;
     width: auto;
-    height: 60%; 
+    height: 100%; 
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 3px 10px 0px rgb(199, 199, 199, 0.678);
     
 }
 
@@ -30,16 +35,15 @@ h1{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-bottom: 25%;
-
-    
+    margin-top: 10%;
 }
 
 
 
 .reviews img{
     height: 100px;
-    width: auto;
+    width: 100px;
+    object-fit: cover;
     margin: 50px 50px 15px 50px ;
 }
 
@@ -53,6 +57,7 @@ h1{
 }
 
 .reviews p {
+    margin-top: 7%;
     font-size: 23px;
     height: max-content;
     text-align: center;
@@ -62,9 +67,30 @@ h1{
 
 
 .konsultation{
-    height: 15%;
+    height: 10%;
+    width: 20%;
+    margin: auto;
+    margin-top: 10%;
     background-color: #3f885a;
-    padding-top: 5%;
+    padding-top: 3%;
     margin-bottom: 0;
+}
+
+.button{
+    background-color: white;
+    padding: 3%;
+    margin: auto;
+
+}
+
+
+img, .konsultation, .button{
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 3px 10px 0px rgb(199, 199, 199, 0.678);
+}
+
+h3{
+    
+    padding: 0 10% 10% 10%;
 }
 
