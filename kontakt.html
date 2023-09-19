@@ -44,10 +44,10 @@
                     <p>020-2211PP</p>
                 </div>
                 <div id="email"><img src="bilder/Ikoner/snabela.png" alt="@ ikon">
-                    <p>info@frontend.se</p>
+                    <p>frontend.se</p>
                 </div>
                 <div id="facebook"><img src="bilder/Ikoner/face.png" alt="facebook ikon">
-                    <p>Facebookclean</p>
+                    <p>Frontend</p>
                 </div>
                 <div id="instagram"><img src="bilder/Ikoner/instagram.png" alt="instagram ikon">
                     <p>@frontend</p>
@@ -59,8 +59,8 @@
                     <p id="fyll"><b>Fyll i vårt formulär och berätta vad du behöver hjälp med så återkommer vi med en offert så snart vi kan.</b></p>
                    <form
                         <fieldset class="form1">
-                            <label><input type="radio" name="val">Beställning</input></label>
-                            <label><input type="radio" name="val">Offert</input></label>
+                            <label id="radio"><input type="radio" name="val">Beställning</input></label>
+                            <label id="radio"><input type="radio" name="val">Offert</input></label>
                             <label><select id="select">
                                 <option>Välj önskad tjänst</option>
                                 <option>Veckostädning</option>
@@ -69,13 +69,13 @@
                                 <option>Fönsterputs</option>
                                 <option>Kontorstädning</option>
                             </select></label>
-                            <label for="namn"><input id="namn" type="text" placeholder="Förnamn" required/></label>
-                            <label for="enamn"><input id="eamn" type="text" placeholder="Efternamn" required/></label>
-                            <label for="epost"><input id="epost" type="text" placeholder="E-post" required/></label>
-                            <label for="telefon"><input id="telefon" minlength="7" type="number" placeholder="Telefon" required/></label>
-                            <label for="adress"><input id="adress" type="text" placeholder="Adress"/></label>
-                            <label for="postnummer"><input id="postnummer" type="number" placeholder="Postnummer"/></label>
-                            <label for="ort"><input id="ort" type="text" placeholder="Ort"/></label>
+                            <label id="labelruta" for="namn"><input id="namn" type="text" placeholder="Förnamn" required/></label>
+                            <label id="labelruta" for="enamn"><input id="eamn" type="text" placeholder="Efternamn" required/></label>
+                            <label id="labelruta" for="epost"><input id="epost" type="text" placeholder="E-post" required/></label>
+                            <label id="labelruta" for="telefon"><input id="telefon" minlength="7" type="number" placeholder="Telefon" required/></label>
+                            <label id="labelruta" for="adressruta"><input id="adressruta" type="text" placeholder="Adress"/></label>
+                            <label id="labelruta" for="postnummer"><input id="postnummer" type="number" placeholder="Postnummer"/></label>
+                            <label id="labelruta" for="ort"><input id="ort" type="text" placeholder="Ort"/></label>
                             <label for="texruta"><textarea rows="5" cols="50" placeholder="Arbetsbeskrivning"></textarea></label>
                             <label><input id="skicka" type="submit" value="Skicka" target="_self"/></label>
                             <label for="samtycke"><input type="checkbox"  id="samtycke" name="samtycket"/> Härmed godkänner jag ert Samtyckesavtal samt GDPR-policy.</label>
