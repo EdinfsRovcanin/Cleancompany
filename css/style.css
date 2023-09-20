@@ -177,6 +177,8 @@ footer {
     border-right: 1px solid #333;
     border-bottom: 1px solid #333; */
     background-color: #3E885A;
+    grid-row-start: 4;
+    grid-row-end: 5;
 }
 
 .del1   {
