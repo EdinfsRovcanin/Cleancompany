@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap');
+
 :root {
-    --green-bg-color:#3E885A;
+  font-family: 'Inclusive Sans', sans-serif;
+  --green-bg-color: #3e885a;
+  --bannerTextColor: #53c85f;
+  --softGreen: #a6eca4;
 }

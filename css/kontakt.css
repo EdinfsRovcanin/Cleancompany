@@ -1,7 +1,9 @@
+
 .container {
     width: 1200px;
     padding: 0px 40px 0 40px
 }
+
 .kontakt {display: grid;
 	margin: 25px 0;
     grid-template-columns:1fr 1fr; 
@@ -10,7 +12,10 @@
     ;
 }
     /* object-fit: cover; Låter bilden täcka hela området utan att sträcka eller krossa proportionerna  */
+
 header { 
+
+
         display: flex;
         justify-content: center;
         align-items: center;
@@ -19,8 +24,8 @@ header {
         font-weight:600;
         grid-column-start: 1;
         grid-column-end: 13;
+
         height: 30px;
-        /* border: 1px solid black;      */
 }
 .left1 {
     grid-column-start: 1;
@@ -226,6 +231,7 @@ input {
 a {
     color: black;
 }
+
 .ikoner2 img {
     width: 25px;
     height: 25px;
