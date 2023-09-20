@@ -126,6 +126,14 @@ header {
     padding: 10px;
 }
 
+.menyitem {
+    /* background-color: #3E885A; */
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    padding-top: 16px;
+}
+
 #bars {
     width: 30px;
 }
@@ -138,7 +146,7 @@ header {
     width: 60px;
     border: 1px solid transparent;
     top: 35px;
-    left: 150px;
+    right: 100px;
     border-radius: 5px;
     box-shadow: 0 0 2px black;
 }
