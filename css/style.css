@@ -1,3 +1,5 @@
+@import "variables.css";
+
 body {
   margin: 0;
 }
@@ -26,19 +28,19 @@ header {
 }
 
 #logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* background-color: whitesmoke; */
-  /* border-left: 1px solid black; */
-  background-image: url(/bilder/logo2.png);
-  background-size: 100% 100%;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  width: 75px;
-  height: 72px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: whitesmoke; */
+    /* border-left: 1px solid black; */
+    background-image: url(../bilder/logo2.png);
+    background-size:100% 100%; 
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end:3;
+    width: 75px;
+    height: 72px;
 }
 
 .nav {
@@ -125,16 +127,16 @@ header {
 }
 
 #hamburgarmeny {
-  display: none;
-  position: absolute;
-  box-sizing: border-box;
-  height: 60px;
-  width: 60px;
-  border: 1px solid transparent;
-  top: 35px;
-  left: 100px;
-  border-radius: 5px;
-  box-shadow: 0 0 2px black;
+    display: none;
+    position: absolute;
+    box-sizing: border-box;
+    height: 60px;
+    width: 60px;
+    border: 1px solid transparent;
+    top: 35px;
+    left: 150px;
+    border-radius: 5px;
+    box-shadow: 0 0 2px black;
 }
 
 #hamburgarmeny:hover,
@@ -172,16 +174,20 @@ footer {
   /* border-left: 1px solid #333;
     border-right: 1px solid #333;
     border-bottom: 1px solid #333; */
-  background-color: #3e885a;
-  grid-row-start: 4;
-  grid-row-end: 5;
+    background-color: #3E885A;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    align-content: center;
+    justify-content: space-evenly;
 }
 
-.del1 {
-  grid-column-start: 1;
-  grid-column-end: 5;
-  grid-row-start: 1;
-  grid-row-end: 2;
+.del1   {
+    align-self: center;
+    grid-column-start: 1;
+	grid-column-end: 5;
+	grid-row-start: 1;
+	grid-row-end: 2 ;
+    padding-left: 20px;
 }
 
 .del2 {

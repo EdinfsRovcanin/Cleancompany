@@ -1,6 +1,7 @@
+@import "variables.css";
 
 .container {
-    width: 1200px;
+    
     padding: 0px 40px 0 40px
 }
 .bildruta1 img {
@@ -342,6 +343,12 @@ a {
             margin-top: 1px;
             margin-right: 50px;
         }
+        .left1 {
+            background-image: url(/bilder/bluoneonlycolor.jpg);
+            background-repeat: repeat;
             
+        }
+        
+
 
     }
