@@ -1,24 +1,25 @@
 @import "variables.css";
  
-/* NYA KODEN TEST */
-
 html {
     scroll-behavior: smooth;
 }
  
+/* Allmänt flex */
 .flex {
     display:flex;
     flex-wrap: wrap;
     justify-content:space-evenly;
-    row-gap: 30px;
+    row-gap: 40px;
 }
  
+/* Flex som ändrar direction i media queries */
 .flexdirection {
     display:flex;
     flex-direction: row;
     justify-content:space-around;
 }
  
+/* Banner med bakgrund */
 .topsection {
     background-image: url(/bilder/banner.png);
     background-position: center;
@@ -37,11 +38,13 @@ html {
 }
  
 #bannertext {
-    font-size: 200%;
+    font-size: 300%;
     width: 100%;
     margin-top: 50px;
+    padding: 0 100px;
 }
  
+/* Länkar till #privatlink och #företaglink på samma sida */
 #privat,
 #företag {
     width: 250px;
@@ -66,11 +69,7 @@ a:visited {
     color: black;
 }
  
-#privatlink,
-#företaglink {
-    width: 100%;
-}
- 
+/*  */
 .containerleft {
     box-sizing: border-box;
 }
@@ -78,32 +77,32 @@ a:visited {
 .containerright,
 .containerleft {
     /* margin:0 0 4vh 0; */
-    width: 49%;
-    min-width:600px;
+    box-sizing: border-box;
+    width: 50%;
+    min-width:595px; /* Responsivitet, lådorna förflyttar sig vid en skärmbredd under 595*2=1190 */
     justify-content: center;
 }
  
+/* Samlingsselektor för båda "lådorna" */
 [class*="box"] {
-    min-width: 300px;
+    min-width: 295px;
     width: 45%;
     box-sizing: border-box;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.445);
 }
  
+/* "låda" med text */
 .box {
     height: 310px;
     padding: 10px;
     background-color: rgb(240, 240, 240);
 }
  
+/* "låda" med bild */
 .box2 {
     object-fit: cover;
 }
- 
-.standing {
-    /* height: 290px; */
-}
- 
+
 li {
     text-align: left;
     padding-top: 3px;
@@ -132,13 +131,14 @@ button:hover {
     color: black;
     box-shadow: 0 0 1px black;
 }
- 
+
 #last {
     margin-bottom: 30px;
 }
  
-@media only screen and (max-width: 1200px) {
-    /* [class*="box"] {
+/* Responsivitet till medelstora skärmar sker genom en automatiskt flexwrap istället för media querie */
+/* @media only screen and (max-width: 1200px) {
+    [class*="box"] {
         min-width: 200px;
         width: 45%;
     }
@@ -149,37 +149,42 @@ button:hover {
     .containerright {
         min-width: 300px;
         margin: 0 10% 5% auto;
-    } */
-}
+    }
+} */
  
 @media only screen and (max-width: 700px) {
     #bannertext {
-        font-size: 120%;
+        font-size: 150%;
         margin-top: 0px;
         padding: 40px;
     }
+
     .topsection {
         width: 100%;
         max-height: auto;
         height: 50vh;
     }
+
     #företag,
     #privat {
         position: relative;
         bottom: 110px;
         font-size: 80%;
         width: 150px;
-        height: 4em;
+        height: 6em;
         margin-bottom: 10px;
         background-color: rgba(255, 255, 255, 0.9);
     }
+
+    /* Ändrar riktningen av lådorna till vertikalled istället för horisontellt */
     .flexdirection {
-        display:flex;
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .box2 {
-        order: -1;
+        order: -1; /* För att få bilden att ligga överst */
         height: 300px;
     }
 }
