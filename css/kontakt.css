@@ -4,6 +4,10 @@
     
     padding: 0px 40px 0 40px
 }
+.bildruta1 img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; Låter bilden täcka hela området utan att sträcka eller krossa proportionerna  */
 
 .kontakt {display: grid;
 	margin: 25px 0;
@@ -131,22 +135,22 @@ header {
     width: 200px;
 }
 label:nth-child(1n) {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;  
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 label:nth-child(2n) {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 label:nth-child(3n) {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
 }
 label:nth-child(4n) {
     grid-column-start: 1;
@@ -209,28 +213,28 @@ label:nth-child(12n) {
     grid-row-end: 11;
 }
 #skicka {
-    min-width: 285px;
+  min-width: 285px;
 }
 label {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 input {
-    min-height: 2em;
+  min-height: 2em;
 }
 #select {
-    width: 13em;
-    min-height: 2em;
-    }
+  width: 13em;
+  min-height: 2em;
+}
 #policy {
     text-align: left;  
     margin-left: 10px; 
 }
 #samtycke {
-    margin-top: 0;
+  margin-top: 0;
 }
 a {
-    color: black;
+  color: black;
 }
 
 .ikoner2 img {
