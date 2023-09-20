@@ -47,7 +47,7 @@ section {
   /* grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(3, 1fr); */
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-    url("/bilder/Cleaning_P.png") no-repeat center center;
+    url(../bilder/Cleaning_P.png) no-repeat center center;
   background-size: cover;
 }
 #heroTextWrap {

@@ -21,7 +21,7 @@ html {
 
 /* Banner med bakgrund */
 .topsection {
-  background-image: url(/bilder/banner.png);
+  background-image: url(../bilder/banner.png);
   background-position: center;
   background-size: cover;
   width: 100%;

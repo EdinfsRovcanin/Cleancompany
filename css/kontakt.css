@@ -37,7 +37,7 @@ header {
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
-    background-image: url("../bilder/blueone.jpg"); 
+    background-image: url(../bilder/blueone.jpg); 
     background-size:cover;
     background-repeat: no-repeat;
     /* max-width: 550px; */
@@ -91,7 +91,7 @@ header {
     grid-row-start: 1;
     grid-row-end:2;
     background-color: #d0dae4;
-    background-image: url(/bilder/bluonebig.jpg);
+    background-image: url(../bilder/bluonebig.jpg);
     /* background-size:cover; */
     background-repeat: no-repeat;
     /* width: 550px; */
@@ -344,7 +344,7 @@ a {
             margin-right: 50px;
         }
         .left1 {
-            background-image: url(/bilder/bluoneonlycolor.jpg);
+            background-image: url(../bilder/bluoneonlycolor.jpg);
             background-repeat: repeat;
             
         }
