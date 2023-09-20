@@ -103,10 +103,12 @@ header {
 
 #innehåll {
     display: none;
-    background-color: rgb(255, 255, 255);
+    background-color: whitesmoke;
     list-style: none;
     position: absolute;
     top: 59px;
+    border-radius: 3px;
+    box-shadow: 0 0 5px black;
 }
 
 #hamburgarmeny ul {
@@ -142,12 +144,13 @@ header {
 #hamburgarmeny:hover,
 #innehåll li:hover {
     border-radius: 5px;
-    background-color: rgb(231, 231, 231);
+    background-color: rgb(216, 216, 216);
     box-shadow: 0 0 2px black;
 }
 
 #hamburgarmeny:hover #innehåll {
     display: block;
+    z-index: 1;
 }
 
 #innehåll {
@@ -208,5 +211,9 @@ footer {
     #oss,
     #kontakt {
         display: none;
+    }
+
+    .knappar > li:hover {
+        border: none;
     }
 }
