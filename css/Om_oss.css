@@ -2,10 +2,14 @@
 
 /* grid-template-columns: */
 body {
+  font-family: "Inclusive Sans", sans-serif;
+}
+/* grid-template-columns: */
+/* body {
   margin: 0px;
   font-family: "Inter", sans-serif;
   color: #454141;
-}
+} */
 header {
   display: flex;
   justify-content: center;
@@ -15,46 +19,19 @@ header {
   min-height: 30px;
   /* border: 1px solid black; */
 }
-.nav {
-  width: 99%;
-  height: 75px;
-  line-height: 75px;
-  padding: 0px 10px;
-  /* background-color: black; */
-  background: linear-gradient(#033747, #012733);
-}
 
-.logoWrap {
-  width: 100px;
-  height: 100%;
-  float: left;
-}
-.logo {
-  margin-top: 2px;
-  width: auto;
-  border-radius: 10px;
-  height: 90%;
-}
-
-.knappar {
-  margin: 2px;
-}
-.knappar li {
-  display: inline-block;
-  list-style: none;
-}
-
-.knappar li a {
-  font-size: 18px;
-  text-transform: uppercase;
-  padding: 0px 30px;
-  color: #fff;
+a:link,
+a:hover,
+a:visited {
   text-decoration: none;
+  color: black;
 }
 
-.knappar li a:hover {
-  color: #ff8c69;
-  transition: all 0.4s;
+.containerMT {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  /*  kan inte använda container ifrån style.css pga att den tvingar denna container att använda: grid */
 }
 
 main {
@@ -141,6 +118,7 @@ section {
   grid-gap: 25px;
   width: 90vw;
   max-width: 1550px;
+  padding: 20px;
 }
 
 .employeeCard {
@@ -150,7 +128,7 @@ section {
   min-height: 100px;
   transition: transform 0.3s;
   box-shadow: 1px 7px 7px 3px rgba(0, 0, 0, 0.5);
-  padding: 10px;
+  padding: 20px;
   gap: 10px;
 }
 
@@ -193,4 +171,60 @@ em {
   height: 50px;
   border-radius: 10px;
   margin: 25px 0px;
+}
+
+@media screen and (max-width: 1200px) {
+  .container1 {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  }
+  .companyInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .gridItemMain {
+  }
+
+  #gridItemMain2 {
+    order: 1;
+  }
+
+  #mainContentImage2 {
+    order: 2;
+    /* display: none; */
+  }
+
+  .cardWrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 10px;
+  }
+  .employeeCard {
+    margin: 10px 0px;
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  #hamburgarmeny {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .knappar {
+    display: none;
+  }
+  .knappar > li:hover {
+    border: none;
+  }
+  #innehåll {
+    margin-top: 0px;
+  }
+  .bannerText {
+    font-size: 35px;
+  }
 }
