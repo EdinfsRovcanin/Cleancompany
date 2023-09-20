@@ -122,7 +122,28 @@ h4 {
     color: white;
 }
 
+@media only screen and (max-width:768px){
+    #hamburgarmeny{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .knappar{
+        display: none;
+    }
 
+    .knappar > li:hover{
+        border: none;
+    }
+
+    #innehåll{
+        margin-top: 0px;
+    }
+
+    .bannerText{
+        font-size: 35px;
+    }
+}
 
 
 
