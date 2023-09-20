@@ -1,13 +1,9 @@
-<<<<<<< HEAD
+
 .container {
     width: 1200px;
     padding: 0px 40px 0 40px
 }
-=======
 
-
-
->>>>>>> 19cb14e1e6a67feea85e2e9b49a8e96b065ee9f5
 .kontakt {display: grid;
 	margin: 25px 0;
     grid-template-columns:1fr 1fr; 
@@ -15,10 +11,11 @@
     flex-shrink: 0; /* För att förhindra krympning av kolumnerna */
     ;
 }
-
     /* object-fit: cover; Låter bilden täcka hela området utan att sträcka eller krossa proportionerna  */
 
-/* header { 
+header { 
+
+
         display: flex;
         justify-content: center;
         align-items: center;
@@ -27,19 +24,9 @@
         font-weight:600;
         grid-column-start: 1;
         grid-column-end: 13;
-<<<<<<< HEAD
-        min-height: 30px;
-        border: 1px solid black;     
-} */
-#adress {
-    display: flex;
-=======
+
         height: 30px;
-        /* border: 1px solid black;      */
->>>>>>> cac65afb3a85ed8f013bf00fdeeff5c08576d618
 }
-
-
 .left1 {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -53,8 +40,7 @@
     /* border: 1px solid rgb(231, 238, 236); */
     /* background-size: cover; */
     background-color: #d0dae4;
-    /* margin-left: 80px; */
-    
+    /* margin-left: 80px; */ 
 }
 .ikoner {
     display: flex;
@@ -68,8 +54,6 @@
     max-width: 300px;
     margin-left: 80px;
     /* border: 3px solid white; */
-   
-    
 }
 .ikoner img {
     width: 25px;
@@ -77,7 +61,6 @@
     margin-top: 10px;
     margin-left: 35px; 
 }
-
 .ikoner >div {
     display: flex;
     margin-top: 0px;
@@ -85,11 +68,9 @@
 #adress {
     margin-top:20px;
 }
-
 #telefon p{
     margin-left: 5px;
 }
-
 #email p{
     margin-left: 5px;
 }
@@ -112,7 +93,6 @@
     /* margin: 20px 0px 25px 25px; */
     /* border: 1px solid rgb(231, 238, 236); */
     margin-left: 20px;
-    
 }
 .form1 {
     display: flex;
@@ -123,23 +103,19 @@
     /* padding: 10px; */
     /* padding-left: 100px;   */
     flex: 1; /* För att kolumnerna ska dela på utrymmet jämnt */
-    flex-shrink: 0; 
-    
-    
+    flex-shrink: 0;  
     row-gap: 25px;   
     border: none;
 }   
 /* input {
     width: 140px;
 } */
-
 #radio {
     width: 95px;
 }
 #fyll { 
     text-align: left;
-    margin-left: 10px;
-    
+    margin-left: 10px;  
 }
 #choose {
     grid-column-start: 1;
@@ -256,7 +232,6 @@ a {
     color: black;
 }
 
-<<<<<<< HEAD
 .ikoner2 img {
     width: 25px;
     height: 25px;
@@ -269,8 +244,6 @@ a {
     display: flex;
     margin-top: 0px;
 }
-
-
     @media (max-width: 1100px) {
         .left1 {
             margin-left: 0px;
@@ -348,9 +321,7 @@ a {
         #skicka {
             min-width: 200px;
         }
-
     }
-
     @media (max-width: 768px) {
         .right1 {
             grid-column-start: 1;
@@ -360,18 +331,13 @@ a {
             margin-left:0;
             margin-top: 25px;
         }
-        
         .ikoner {
             display: flex;
             flex-direction: column;
             justify-self:end;
             margin-top: 1px;
             margin-right: 50px;
-            ;
-
+        }
             
 
     }
-=======
-
->>>>>>> 19cb14e1e6a67feea85e2e9b49a8e96b065ee9f5
