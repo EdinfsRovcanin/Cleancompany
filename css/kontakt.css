@@ -1,7 +1,13 @@
+<<<<<<< HEAD
 .container {
     width: 1200px;
     padding: 0px 40px 0 40px
 }
+=======
+
+
+
+>>>>>>> 19cb14e1e6a67feea85e2e9b49a8e96b065ee9f5
 .kontakt {display: grid;
 	margin: 25px 0;
     grid-template-columns:1fr 1fr; 
@@ -250,6 +256,7 @@ a {
     color: black;
 }
 
+<<<<<<< HEAD
 .ikoner2 img {
     width: 25px;
     height: 25px;
@@ -365,3 +372,6 @@ a {
             
 
     }
+=======
+
+>>>>>>> 19cb14e1e6a67feea85e2e9b49a8e96b065ee9f5
