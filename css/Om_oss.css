@@ -1,9 +1,9 @@
 /* grid-template-columns: */
-body {
+/* body {
   margin: 0px;
   font-family: "Inter", sans-serif;
   color: #454141;
-}
+} */
 header {
   display: flex;
   justify-content: center;
