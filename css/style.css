@@ -1,5 +1,10 @@
-.container {display: grid;
-	width: 89%;
+body {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+	width: 100%;
 	margin: 0 auto;
     grid-template-columns: repeat(12, 1fr);
 }
@@ -13,6 +18,7 @@ header {
     min-height: 30px;
     border: 1px solid black;   
 }
+
 .nav {
     width: 99%;
     height: 75px;
@@ -22,27 +28,28 @@ header {
 
 }
 
-.logoWrap{
+.logoWrap {
    width: 100px;
    height: 100px;
    float: left;
 }
+
 .logo {
     margin-top: 2px;
     width: auto;
     height: 70%;
     border-radius: 10px;
-    }
-
-.knappar{
-margin: 2px;
 }
+.knappar{
+    margin: 2px;
+}
+
 .knappar li {
     display: inline-block;
     list-style: none;
 }
 
-.knappar li a{
+.knappar li a {
     font-size: 18px;
     text-transform: uppercase;
     padding: 0px 30px;
@@ -51,10 +58,9 @@ margin: 2px;
 }
 
 .knappar li a:hover {
-color: #ff8c69;
-transition: all 0.4s;
+    color: #ff8c69;
+    transition: all 0.4s;
 }
-
 
 /* header { 
     display: flex;
