@@ -3,10 +3,11 @@ body {
 }
 
 .container {
-  display: grid;
-	width: 1200px;
-	margin: 0 auto;
-  grid-template-columns: repeat(12, 1fr);
+    display: grid;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    grid-template-columns: repeat(12, 1fr);
 }
 
 header { 
@@ -37,6 +38,7 @@ header {
     grid-row-start: 2;
     grid-row-end:3;
     width: 75px;
+    height: 72px;
 
 }
 
@@ -51,7 +53,7 @@ header {
 
 #meny {
     
-    grid-column-start: 3;
+    grid-column-start: 1;
     grid-column-end: 13;
     /* border-left: 1px solid black; */
     /* border-right: 1px solid black; */
@@ -99,6 +101,57 @@ header {
     text-decoration: none;
 }
 
+#innehåll {
+    display: none;
+    background-color: rgb(255, 255, 255);
+    list-style: none;
+}
+
+#hamburgarmeny ul {
+    padding: 0;
+}
+
+#hamburgarmeny li {
+    margin: 0;
+}
+
+#innehåll a {
+    display: block;
+    padding: 10px;
+}
+
+#bars {
+    width: 30px;
+}
+
+#hamburgarmeny {
+    display: none;
+    position: absolute;
+    box-sizing: border-box;
+    height: 60px;
+    width: 60px;
+    border: 1px solid transparent;
+    top: 35px;
+    border-radius: 5px;
+    box-shadow: 0 0 2px black;
+}
+
+#hamburgarmeny:hover,
+#innehåll li:hover {
+    border-radius: 5px;
+    background-color: rgb(231, 231, 231);
+    box-shadow: 0 0 2px black;
+}
+
+#hamburgarmeny:hover #innehåll {
+    display: block;
+}
+
+#innehåll {
+    position: absolute;
+    top: 59px;
+}
+
 main {
     grid-column-start: 1;
     grid-column-end: 13;
@@ -139,4 +192,18 @@ footer {
     grid-column-end: 13;
     grid-row-start: 1;
     grid-row-end: 2 ;
+}
+
+@media only screen and (max-width:810px){
+    #hamburgarmeny {
+        display: flex;
+    }
+
+    #hem,
+    #tjanster,
+    #referenser,
+    #oss,
+    #kontakt {
+        display: none;
+    }
 }
