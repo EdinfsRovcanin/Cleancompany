@@ -1,4 +1,5 @@
 /* css till referenser */
+@import "variables.css";
 
 * {
     margin: 0;
