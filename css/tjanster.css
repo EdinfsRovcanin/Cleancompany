@@ -1,28 +1,66 @@
 @import "variables.css";
-
+ 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
-
+ 
+/* Allmänt flex */
 .flex {
-    display: flex;
-    justify-content: space-evenly;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    row-gap: 40px;
 }
-
-#wrap {
-    display: grid;
-    gap: 30px 0px;
+ 
+/* Flex som ändrar direction i media queries */
+.flexdirection {
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
 }
-
-#wrap a {
-    border-radius: 0px 0px 10px 10px;
-    box-shadow: 0px 3px 10px 0 rgba(199, 199, 199, 0.678);
+ 
+/* Banner med bakgrund */
+.topsection {
+    background-image: url(/bilder/banner.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    max-height: 30vh;
+    min-height: 400px;
+    /* background: linear-gradient(rgba(230, 230, 230, 0), rgba(0, 0, 0, 0.45)); */
 }
-
-#wrap a:hover {
-    box-shadow: 0px 3px 20px 0 rgb(199, 199, 199);
+ 
+.greenBanner {
+    width: 100%;
+    background: #a6eca4;
+    height: 50px;
+    align-content: center;
 }
-
+ 
+#bannertext {
+    font-size: 300%;
+    width: 100%;
+    margin-top: 50px;
+    padding: 0 100px;
+}
+ 
+/* Länkar till #privatlink och #företaglink på samma sida */
+#privat,
+#företag {
+    width: 250px;
+    height: 6em;
+    border-radius: 10px;
+    margin-bottom: 150px;
+    align-content: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 3px 10px 0 rgba(170, 170, 170, 0.678);
+}
+ 
+#privat:hover,
+#företag:hover {
+    box-shadow: 0px 3px 20px 0 rgb(131, 131, 131);
+}
+ 
 a:link,
 a:hover,
 a:active,
@@ -30,47 +68,123 @@ a:visited {
     text-decoration: none;
     color: black;
 }
-
-[class*="bild"] {
-    min-width: 150px;
-    width: 30vw;
-    border-radius: 4px;
+ 
+/*  */
+.containerleft {
+    box-sizing: border-box;
 }
-
-#privatlink,
-#företaglink {
-    width: 100%;
-    height: 15vh;
+ 
+.containerright,
+.containerleft {
+    /* margin:0 0 4vh 0; */
+    box-sizing: border-box;
+    width: 50%;
+    min-width:595px; /* Responsivitet, lådorna förflyttar sig vid en skärmbredd under 595*2=1190 */
+    justify-content: center;
+}
+ 
+/* Samlingsselektor för båda "lådorna" */
+[class*="box"] {
+    min-width: 295px;
+    width: 45%;
+    box-sizing: border-box;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.445);
+}
+ 
+/* "låda" med text */
+.box {
+    height: 310px;
+    padding: 10px;
+    background-color: rgb(240, 240, 240);
+}
+ 
+/* "låda" med bild */
+.box2 {
     object-fit: cover;
 }
 
-.container1 {
-    width: 80%;
-    display: flex;
+li {
+    text-align: left;
+    padding-top: 3px;
+}
+ 
+.box p {
+    text-align: center;
+}
+ 
+button {
+    font-family: 'Inclusive Sans', sans-serif;
+    color: white;
+    background-color: #78ac76;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    height: 40px;
+    width: 100px;
+}
+ 
+button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 1px black;
 }
 
-.containerleft {
-    margin-left: 3%;
+#last {
+    margin-bottom: 30px;
 }
+ 
+/* Responsivitet till medelstora skärmar sker genom en automatiskt flexwrap istället för media querie */
+/* @media only screen and (max-width: 1200px) {
+    [class*="box"] {
+        min-width: 200px;
+        width: 45%;
+    }
+    .containerleft {
+        margin: 0 auto 5% 10%;
+        min-width: 300px;
+    }
+    .containerright {
+        min-width: 300px;
+        margin: 0 10% 5% auto;
+    }
+} */
+ 
+@media only screen and (max-width: 700px) {
+    #bannertext {
+        font-size: 150%;
+        margin-top: 0px;
+        padding: 40px;
+    }
 
-.containerright {
-    margin: 0 3% 0 auto;
-}
+    .topsection {
+        width: 100%;
+        max-height: auto;
+        height: 50vh;
+    }
 
-.box {
-    background-color: rgb(243, 243, 243);
-    box-shadow: 0 0 3px rgb(184, 184, 184);
-}
+    #företag,
+    #privat {
+        position: relative;
+        bottom: 110px;
+        font-size: 80%;
+        width: 150px;
+        height: 6em;
+        margin-bottom: 10px;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
 
-table {
-    height: 100%;
-    width: 170px;
-}
-th, td {
-    width: 50%;
-    padding: 5px;
-}
+    /* Ändrar riktningen av lådorna till vertikalled istället för horisontellt */
+    .flexdirection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-td:last-child {
-    font-weight: bold;
+    .box2 {
+        order: -1; /* För att få bilden att ligga överst */
+        height: 300px;
+    }
 }
