@@ -10,40 +10,111 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/kontakt.css">
         <title>Document</title>
     </head>
     <body>
+        
+<!-- ny kod nedan -->
+<header>
+    <b>Just nu får alla nya kunder 25% rabatt</b>
+</header>
+    <nav class="nav">
+        <section id="logo"><a href="index.html"></a></section>
+        <section id="meny">
+            <ul class="knappar">
+                <li><a id="hem" href="index.html">Hem</a></li>
+                <li><a id="tjanster" href="tjanster.html">Tjänster</a></li>
+                <li><a id="referenser" href="referenser.html">Referenser</a></li>
+                <li><a id="oss" href="Om_oss.html">Om oss</a></li>
+                <li><a id="kontakt" href="kontakt.html">Kontakt</a></li>
+                <li id="hamburgarmeny">
+                    <a><div id="bars"><hr><hr><hr></div></a>
+                    <ul id="innehåll">
+                      <li><a href="index.html">Hem</a></li>
+                      <li><a href="tjanster.html">Tjänster</a></li>
+                      <li><a href="referenser.html">Referenser</a></li>
+                      <li><a href="Om_oss.html">Om oss</a></li>
+                      <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </nav>
+<!-- ny kod ovan -->
+
     <div class="container">
-        <header>
-            <b>Just nu får alla nya kunder 25% rabatt</b>
-            
-        </header>
-        <nav class="nav">
-            <section id="logo"><a href="index.html"><img src="bilder/logo980x490.jpg" width="200" height="100" alt="logotype"></a></section>
-            <section id="meny">
-                <ul class="knappar">
-                    <li><a id="hem" href="index.html">Hem</a></li>
-                    <li><a id="tjanster" href="tjanster.html" t>Tjänster</a></li>
-                    <li><a id="referenser" href="referenser.html" >Referenser</a></li>
-                    <li><a id="oss" href="oss.html" >Om oss</a></li>
-                    <li><a id="kontakt" href="kontakt.html">Kontakt</a></li>
-                </ul>
-            </section>
-        </nav>
+        
         <main>
-            <section>
-            <h1>KONTAKT SIDA</h1>
-            <h1>KONTAKT SIDA</h1>
-            <h1>KONTAKT SIDA</h1>
-            <h1>KONTAKT SIDA</h1>
-            <h1>KONTAKT SIDA</h1>
+            <div>
+            <div class="kontakt">
+                <div class="left1">
+            </div>
+            <div class="ikoner"> 
+                <div id="adress"><img src="bilder/Ikoner/adress48px.png" alt="lokation ikon">
+                    <p>Frontendgatan 1</p>
+                </div>
+                <div id="telefon"><img src="bilder/Ikoner/phone.png" alt="Telefon ikon">
+                    <p>020-2211PP</p>
+                </div>
+                <div id="email"><img src="bilder/Ikoner/snabela.png" alt="@ ikon">
+                    <p>frontend.se</p>
+                </div>
+                <div id="facebook"><img src="bilder/Ikoner/face.png" alt="facebook ikon">
+                    <p>Frontend</p>
+                </div>
+                <div id="instagram"><img src="bilder/Ikoner/instagram.png" alt="instagram ikon">
+                    <p>@frontend</p>
+                </div>
+            </div>    
+
+                <div class="right1">
+                    <h2 id="formrubrik">Formulär</h2>
+                    <p id="fyll"><b>Fyll i vårt formulär och berätta vad du behöver hjälp med så återkommer vi med en offert så snart vi kan.</b></p>
+                   <form
+                        <fieldset class="form1">
+                            <label id="radio"><input type="radio" name="val" required>Beställning</input></label>
+                            <label id="radio"><input type="radio" name="val">Offert</input></label>
+                            <label><select id="select">
+                                <option>Välj önskad tjänst</option>
+                                <option>Veckostädning</option>
+                                <option>Storstädning</option>
+                                <option>Flyttstädning</option>
+                                <option>Fönsterputs</option>
+                                <option>Kontorstädning</option>
+                            </select></label>
+                            <label id="labelruta" for="namn"><input id="namn" type="text" placeholder="Förnamn" required/></label>
+                            <label id="labelruta" for="enamn"><input id="eamn" type="text" placeholder="Efternamn" required/></label>
+                            <label id="labelruta" for="epost"><input id="epost" type="text" placeholder="E-post" required/></label>
+                            <label id="labelruta" for="telefon"><input id="telefon" minlength="7" type="number" placeholder="Telefon" required/></label>
+                            <label id="labelruta" for="adressruta"><input id="adressruta" type="text" placeholder="Adress"/></label>
+                            <label id="labelruta" for="postnummer"><input id="postnummer" type="number" placeholder="Postnummer"/></label>
+                            <label id="labelruta" for="ort"><input id="ort" type="text" placeholder="Ort"/></label>
+                            <label for="texruta"><textarea rows="5" cols="50" placeholder="Arbetsbeskrivning"></textarea></label>
+                            <label><input id="skicka" type="submit" value="Skicka" target="_self"/></label>
+                            <label for="samtycke"><input type="checkbox"  id="samtycke" name="samtycket" required/> Härmed godkänner jag ert Samtyckesavtal samt GDPR-policy.</label>
+                            <p id="choose"><b>Jag önskar:</b></p>
+                        
+                        </fieldset>
+                        
+                    </form>
+                    <p id="policy">Läs vårt <a href="">Samtyckesavtal</a> samt <a href="">GDPR-policy</a></p>
+                </div>
+
+            
             </section>
+            
+          
+            
         </main>
+        </div>
         <footer>
-            <div class="del1">Del1</div>
-            <div class="del2">Del2</div>
-            <div class="del3">Del3</div>
+            <div class="del1">&#169; Copyright - Cleaningcompany Sverige | Produced by Grupp 6 FSU23D</div>
+            <div class="del2"></div>
+            <div class="del3">
+                <a href="#"><img src="/bilder/Ikoner/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="/bilder/Ikoner/face.png" alt="Facebook"></a>
+            </div>
         </footer>
-    </div>
+    
 </body>
-</html>

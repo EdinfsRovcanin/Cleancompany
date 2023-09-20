@@ -1,0 +1,196 @@
+@import "variables.css";
+
+/* grid-template-columns: */
+body {
+  margin: 0px;
+  font-family: "Inter", sans-serif;
+  color: #454141;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3e885a;
+  color: white;
+  min-height: 30px;
+  /* border: 1px solid black; */
+}
+.nav {
+  width: 99%;
+  height: 75px;
+  line-height: 75px;
+  padding: 0px 10px;
+  /* background-color: black; */
+  background: linear-gradient(#033747, #012733);
+}
+
+.logoWrap {
+  width: 100px;
+  height: 100%;
+  float: left;
+}
+.logo {
+  margin-top: 2px;
+  width: auto;
+  border-radius: 10px;
+  height: 90%;
+}
+
+.knappar {
+  margin: 2px;
+}
+.knappar li {
+  display: inline-block;
+  list-style: none;
+}
+
+.knappar li a {
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 0px 30px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.knappar li a:hover {
+  color: #ff8c69;
+  transition: all 0.4s;
+}
+
+main {
+  max-width: 100vw;
+  /* display: flex;
+    justify-content: space-around; */
+}
+section {
+}
+#bannerWrap {
+  width: 100%;
+  min-height: 350px;
+  /* grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(3, 1fr); */
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("/bilder/Cleaning_P.png") no-repeat center center;
+  background-size: cover;
+}
+#heroTextWrap {
+  padding: 55px;
+}
+
+.bannerGrid {
+  display: flex;
+  /* justify-content:center ; */
+  align-items: center;
+}
+.bannerText {
+  transition: transform 0.3s;
+  margin: 0px;
+  font-size: 45px;
+  color: #fff;
+
+  margin-top: 25px;
+}
+.secondBannerText {
+  text-align: center;
+  color: #53c85f;
+}
+
+.bannerText:hover {
+  transform: translateX(7px);
+}
+.container1 {
+  display: flex;
+  justify-content: center;
+}
+.companyInfo {
+  display: grid;
+  grid-gap: 25px;
+  /* display: flex; */
+  width: 90vw;
+  max-width: 1550px;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-around;
+}
+
+.gridItemMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.companyInfoText {
+  font-size: 25px;
+}
+
+.mainContentImageRatio {
+  width: 100%;
+  height: auto;
+}
+
+.workerSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 25px;
+  width: 90vw;
+  max-width: 1550px;
+}
+
+.employeeCard {
+  display: flex;
+  background-color: #fff;
+  border-radius: 25px;
+  min-height: 100px;
+  transition: transform 0.3s;
+  box-shadow: 1px 7px 7px 3px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  gap: 10px;
+}
+
+.employeeCard:hover {
+  transform: translateY(5px);
+  cursor: pointer;
+}
+.imgContainer {
+  width: 75px;
+}
+.cardImg {
+  width: 100%;
+  border-radius: 50%;
+}
+.insideCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.cardText {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 20px;
+}
+.employeeCardNames {
+}
+em {
+}
+.greenBanner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #a6eca4;
+  height: 50px;
+  border-radius: 10px;
+  margin: 25px 0px;
+}

@@ -4,40 +4,180 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/tjanster.css">
+    <title>Cleancompany Tjänster</title>
 </head>
 <body>
 <div class="container">
     <header>
         <b>Just nu får alla nya kunder 25% rabatt</b>
-        
     </header>
     <nav class="nav">
-        <section id="logo"><a href="index.html"><img src="bilder/logo980x490.jpg" width="200" height="100" alt="logotype"></a></section>
+        <section id="logo"><a href="index.html"></a></section>
         <section id="meny">
             <ul class="knappar">
                 <li><a id="hem" href="index.html">Hem</a></li>
                 <li><a id="tjanster" href="tjanster.html">Tjänster</a></li>
                 <li><a id="referenser" href="referenser.html">Referenser</a></li>
-                <li><a id="oss" href="oss.html">Om oss</a></li>
+                <li><a id="oss" href="Om_oss.html">Om oss</a></li>
                 <li><a id="kontakt" href="kontakt.html">Kontakt</a></li>
+                <li id="hamburgarmeny">
+                    <a><div id="bars"><hr><hr><hr></div></a>
+                    <ul id="innehåll">
+                      <li><a href="index.html">Hem</a></li>
+                      <li><a href="tjanster.html">Tjänster</a></li>
+                      <li><a href="referenser.html">Referenser</a></li>
+                      <li><a href="Om_oss.html">Om oss</a></li>
+                      <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </li>
             </ul>
         </section>
     </nav>
     <main>
-        <section>
-        <h1>Tjänster</h1>
-        <h1>Tjänster</h1>
-        <h1>Tjänster</h1>
-        <h1>Tjänster</h1>
-        <h1>Tjänster</h1>
-        <h1>Tjänster</h1>
-        </section>
+        <div class="flex"> <!-- Mycket sker genom flex här :) -->
+            <section class="flex topsection"> <!-- Banner med text, bakgrund och 2 länkar till andra delar av samma sida -->
+                <h1 id="bannertext">En ren och välstädad miljö gynnar både sinne och kropp</h1>
+                <a class="flex" id="privat" href="#privatlink">
+                    <h2>Privatperson</h2>
+                </a>
+                <a class="flex" id="företag" href="#företaglink">
+                    <h2>Företag</h2>
+                </a>
+            </section>
+            <div class="flex greenBanner"> <!-- Grön banner med text -->
+                <h2 id="privatlink">Tjänster för livets alla städbegär</h2> <!-- hit skickas man om man klickar på länken "privatperson" -->
+            </div>
+            <section class="flex"> <!-- Inkapslade är totalt 2 grupper med 2 lådor var -->
+                <div class="flexdirection containerleft"> <!-- 2 lådor, ena med text och den andra med en bild -->
+                    <div class="box">
+                        <h2>Hemstädning</h2>
+                        <p>En ytlig städning av det vanligaste i hemmet. Hyr oss en gång eller skapa en långtidsplan med oss!</p>
+                        <ul>
+                            <li>Alla rum</li>
+                            <li>Kök</li>
+                            <li>Badrum</li>
+                            <li>Fönster</li>
+                        </ul>
+                        <button onclick="window.location.href='kontakt.html';">Beställ</button> <!-- knapp som länkar till kontakt.html -->
+                    </div>
+                    <img class="box2" src="/bilder/rent-kök.jpg" alt="Renstädat kök">
+                </div>
+                <div class="flexdirection containerright"> <!-- Sista 2 lådorna för denna sektion, ena med text och den andra med en bild -->
+                    <div class="box">
+                        <h2>Flyttstädning</h2>
+                        <p>En noggran städning av alla<br> hemmets ytor och vrår.</p>
+                        <ul>
+                            <li>Alla rum</li>
+                            <li>Kök</li>
+                            <li>Badrum</li>
+                            <li>Fönster</li>
+                        </ul>
+                        <br>
+                        <button onclick="window.location.href='kontakt.html';">Beställ</button>
+                    </div>
+                    <img class="box2" src="/bilder/utflytt.jpg" alt="Utflytt">
+                </div>
+            </section>
+            <section class="flex"> <!-- Repetition av ovanstående sektion med ändrad text och bild -->
+                <div class="flexdirection containerleft">
+                    <div class="box">
+                        <h2>Fönsterputs</h2>
+                        <p>Skinande rena fönster.</p>
+                        <ul>
+                            <li>Fönster</li>
+                        </ul>
+                        <button onclick="window.location.href='kontakt.html';">Beställ</button>
+                    </div>
+                    <img class="box2" src="/bilder/fönsterputs.jpg" alt="Fönsterputs">
+                </div>
+                <div class="flexdirection containerright">
+                    <div class="box">
+                        <h2>Storstädning</h2>
+                        <p>En genomgående städning som lämnar din lägenhet som ny.</p>
+                        <ul>
+                            <li>Alla rum</li>
+                            <li>Kök</li>
+                            <li>Badrum</li>
+                            <li>Fönster</li>
+                        </ul>
+                        <button onclick="window.location.href='kontakt.html';">Beställ</button>
+                    </div>
+                    <img class="box2" src="/bilder/Storstädning2.jpg" alt="Storstädning">
+                </div>
+            </section>
+            <div class="flex greenBanner"> <!-- En avgränsande banner med text  -->
+                <h2 id="företaglink">Städhjälp för företag</h2> <!-- hit skickas man om man klickar på länken "företag" -->
+            </div>
+            <section class="flex"> <!-- Repetition av ovanstående sektion med ändrad text och bild -->
+                <div class="flexdirection containerleft">
+                    <div class="box">
+                        <h2>Konstorsstädning</h2>
+                        <p>Profesionell städning för ditt företag</p>
+                        <ul>
+                            <li>Alla rum</li>
+                            <li>Kök</li>
+                            <li>Badrum</li>
+                            <li>Fönster</li>
+                        </ul>
+                        <button onclick="window.location.href='kontakt.html';">Beställ</button>
+                    </div>
+                    <img class="box2" src="/bilder/Facility, windows.png" alt="Renstädat kök">
+                </div>
+                <div class="flexdirection containerright">
+                    <div class="box">
+                        <h2>Konstorsstädning</h2>
+                        <p>Profesionell städning för ditt företag</p>
+                        <ul>
+                            <li>Alla rum</li>
+                            <li>Kök</li>
+                            <li>Badrum</li>
+                            <li>Fönster</li>
+                        </ul>
+                        <button onclick="window.location.href='kontakt.html';">Beställ</button>
+                    </div>
+                    <img class="box2" src="/bilder/Facility, windows.png" alt="Renstädat kök">
+                </div>
+            </section>
+            <section id="last" class="flex">
+                <div class="flexdirection containerleft">
+                    <div class="box">
+                        <h2>Konstorsstädning</h2>
+                        <p>Profesionell städning för ditt företag</p>
+                        <ul>
+                            <li>Alla rum</li>
+                            <li>Kök</li>
+                            <li>Badrum</li>
+                            <li>Fönster</li>
+                        </ul>
+                        <button onclick="window.location.href='kontakt.html';">Beställ</button>
+                    </div>
+                    <img class="box2" src="/bilder/Facility, windows.png" alt="Renstädat kök">
+                </div>
+                <div class="flexdirection containerright">
+                    <div class="box">
+                        <h2>Konstorsstädning</h2>
+                        <p>Profesionell städning för ditt företag</p>
+                        <ul>
+                            <li>Alla rum</li>
+                            <li>Kök</li>
+                            <li>Badrum</li>
+                            <li>Fönster</li>
+                        </ul>
+                        <button onclick="window.location.href='kontakt.html';">Beställ</button>
+                    </div>
+                    <img class="box2" src="/bilder/Facility, windows.png" alt="Renstädat kök">
+                </div>
+            </section>
+        </div>
     </main>
     <footer>
-        <div class="del1">Del1</div>
-        <div class="del2">Del2</div>
-        <div class="del3">Del3</div>
+        <div class="del1">&#169; Copyright - Cleaningcompany Sverige | Produced by Grupp 6 FSU23D</div>
+        <div class="del2"></div>
+        <div class="del3">
+            <a href="#"><img src="/bilder/Ikoner/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="/bilder/Ikoner/face.png" alt="Facebook"></a>
+        </div>
     </footer>
 </div>
 </body>
