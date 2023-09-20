@@ -8,7 +8,7 @@
   width: 100%;
   height: 100%;
   /* object-fit: cover; Låter bilden täcka hela området utan att sträcka eller krossa proportionerna  */
-
+}
 .kontakt {display: grid;
 	margin: 25px 0;
     grid-template-columns:1fr 1fr; 
