@@ -62,22 +62,22 @@ body {
     display: flex; 
     flex-direction: row;
     justify-content: center;
+    margin-top: 50px;
 }
  
 .box {
     height: auto;
     text-align: center;
-    /* background-image: url(../cleansoffa.png); */
+    /*background-image: url(../cleansoffa.png); */
     flex: 1;
 }
 
-.box h2, p {
-    color: black;
-}
 
 .box p{
     padding: 10px;
 }
+
+/*Bilder med texter*/
  
 .main-content {
     display: flex;
@@ -85,7 +85,7 @@ body {
     justify-content: center; 
     align-items: center; 
     margin: 100px auto;
-    max-width: 1600px;
+    max-width: 1200px;
 }
  
 .content {
@@ -145,7 +145,94 @@ main img {
     color: black;
  }
 
- @media only screen and min-width(1200px){
 
-    
+ /*Desktop skärmar*/
+ @media only screen and max-width(1200px){
+
  }
+
+
+/*Tablets*/
+@media (min-width: 700px) and (max-width: 960px){
+    .banner-content h1 {
+        font-size: 35px;
+      }
+      
+      .banner-content .button {
+        padding: 10px 25px; /* ändrar button storlek*/
+        font-size: 20px; 
+      }
+    
+      .boxar {
+        flex-direction: column;
+      }
+  
+      .main-content{
+          flex-direction: row;
+         margin-top: 15px;
+      }
+
+      
+   #bild2 {
+      display: none;
+   }
+  
+   .content{
+      width: 700px;
+      height: 200px;
+      padding: 0;
+
+   }
+  .banner-2{
+          height: 40vh;
+       }
+  
+   .banner-content-2 h1{
+    font-size: 30px;
+   }
+  
+}
+  
+  /* Mobiler */
+  @media only screen and (max-width: 700px) {
+
+    .banner-content h1 {
+      font-size: 30px;
+    }
+    
+    .banner-content .button {
+        padding: 10px 15px; /* ändrar button storlek*/
+        font-size: 15px; 
+    }
+  
+    .boxar {
+      flex-direction: column;
+      padding: 70px;
+    }
+
+    .main-content{
+        flex-direction: column;
+        margin-top: 0;
+        max-width: 700px;
+    }
+    
+ #bild2 {
+    display: none;
+ }
+
+ .content{
+    padding: 0 30px;
+ }
+
+.banner-2{
+        height: 30vh;
+     }
+
+ .banner-content-2 h1{
+    font-size: 30px;
+ }
+
+ }
+
+
+
