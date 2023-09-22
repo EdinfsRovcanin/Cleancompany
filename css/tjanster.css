@@ -30,19 +30,25 @@ html {
   /* background: linear-gradient(rgba(230, 230, 230, 0), rgba(0, 0, 0, 0.45)); */
 }
 
-.greenBanner {
-  width: 100%;
-  background: #a6eca4;
-  height: 50px;
-  align-content: center;
-}
-
-#bannertext {
+.topsection h1 {
   font-size: 300%;
   width: 100%;
   margin-top: 50px;
   padding: 0 100px;
 }
+
+.greenBanner {
+  width: 100%;
+  background: var(--softGreen);
+  align-content: center;
+}
+
+.greenBanner h2 {
+  font-size: 200%;
+  margin: 0;
+  padding: 10px;
+}
+
 
 /* Länkar till #privatlink och #företaglink på samma sida */
 #privat,
@@ -70,7 +76,7 @@ html {
   justify-content: center;
 }
 
-/* Samlingsselektor för båda "lådorna" */
+/* Samlingsselektor för båda sortens lådor */
 [class*="box"] {
   min-width: 295px;
   width: 45%;
@@ -80,7 +86,10 @@ html {
 
 /* "låda" med text */
 .box {
-  height: 310px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 330px;
   padding: 10px;
   background-color: rgb(240, 240, 240);
 }
@@ -90,7 +99,11 @@ html {
   object-fit: cover;
 }
 
-li {
+.box button {
+  align-self: center;
+}
+
+.box li {
   text-align: left;
   padding-top: 3px;
 }
@@ -127,24 +140,6 @@ button:hover {
 
 /* Responsivitet till medelstora skärmar sker genom en automatiskt flexwrap istället för media queries */
 
-
-/* @media only screen and (max-width: 1200px) {
-    [class*="box"] {
-        min-width: 200px;
-        width: 45%;
-    }
-    .containerleft {
-        margin: 0 auto 5% 10%;
-        min-width: 300px;
-    }
-    .containerright {
-        min-width: 300px;
-        margin: 0 10% 5% auto;
-    }
-} */
-
-
-
 /* Fix för att inte få en horisontell scroll på smala enheter */
 @media only screen and (max-width: 810px) {
   .containerleft,
@@ -154,16 +149,16 @@ button:hover {
 }
 
 @media only screen and (max-width: 700px) {
-  #bannertext {
-    font-size: 150%;
-    margin-top: 0px;
-    padding: 40px;
-  }
-
   .topsection {
     width: 100%;
     max-height: auto;
     height: 50vh;
+  }
+
+  .topsection h1 {
+    font-size: 150%;
+    margin-top: 0px;
+    padding: 40px;
   }
 
   #företag,
@@ -174,7 +169,7 @@ button:hover {
     width: 150px;
     height: 6em;
     margin-bottom: 10px;
-    background-color: rgba(255, 255, 255, 0.9);
+    /* background-color: rgba(255, 255, 255, 0.9); */
   }
 
   /* Ändrar riktningen av lådorna till vertikalled istället för horisontellt */
