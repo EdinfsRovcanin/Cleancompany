@@ -4,6 +4,7 @@ body {
   margin: 0;
 }
 
+/* kapsulerar hela sidan */
 .container {
   display: grid;
   width: 100%;
@@ -12,11 +13,12 @@ body {
   grid-template-columns: repeat(12, 1fr);
 }
 
+/* En kort banderoll där vi kan visa speciella meddelanden eller erbjudanden */
 header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #3e885a;
+  background-color: var(--green-bg-color);
   color: white;
   font-weight: 600;
   grid-column-start: 1;
@@ -27,50 +29,60 @@ header {
   /* border: 1px solid black;    */
 }
 
-#logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* background-color: whitesmoke; */
-  /* border-left: 1px solid black; */
-  background-image: url(../bilder/logo2.png);
-  background-size: 100% 100%;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  width: 75px;
-  height: 72px;
-}
-
+/* Navigationsmeny som inkluderar logo, menyknapparna och hamburgarmenyn */
 .nav {
   display: grid;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  grid-template-columns: 240px auto 240px;
   grid-column-start: 1;
   grid-column-end: 13;
   min-height: 50px;
   background-color: whitesmoke;
+  box-shadow: 0 0 3px rgb(189, 189, 189);
 }
 
-#meny {
-  grid-column-start: 1;
-  grid-column-end: 13;
-  /* border-left: 1px solid black; */
-  /* border-right: 1px solid black; */
+#logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  background-image: url(../bilder/logo2.png);
+  background-size: 100% 100%;
+  width: 75px;
+  height: 72px;
 }
 
+#logo h1 {
+  position: absolute;
+  text-align: end;
+  font-size: 150%;
+  left: 100px;
+  top: auto;
+  padding: 0;
+}
+
+#logolink:hover {
+  border-radius: 0 0 10px 0;
+  /* background-color: #e4e4e4; */
+  background: linear-gradient(0.25turn, #e4e4e4, whitesmoke, #ecececb6);
+}
+
+#meny {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Menyknapparna, dessa inkluderar EJ hamburgarmenyn */
 .knappar {
   display: flex;
   gap: 20px;
+  padding: 0;
 }
 
 .knappar > li {
   display: flex;
-  /* border: 1px solid black; */
   width: 100px;
   height: 35px;
   justify-content: center;
@@ -78,25 +90,12 @@ header {
   border-bottom: 2px solid transparent;
 }
 
-/* .knappar > li:hover {
-  border-bottom: 2px solid black;
-} */
 a:link,
 a:hover,
 a:active,
 a:visited {
   text-decoration: none;
   color: black;
-}
-
-#innehåll {
-  display: none;
-  background-color: whitesmoke;
-  list-style: none;
-  position: absolute;
-  top: 59px;
-  border-radius: 3px;
-  box-shadow: 0 0 5px black;
 }
 
 .menyitem {
@@ -114,6 +113,12 @@ a:visited {
   border-bottom: 2px solid transparent;
 }
 
+.activehamburgare {
+  border-radius: 5px;
+  background-color: rgb(216, 216, 216);
+  box-shadow: 0 0 2px black;
+}
+
 .menyitem:hover {
   border-radius: 5px 5px 0 0;
   border-bottom: 2px solid black;
@@ -127,26 +132,45 @@ a:visited {
   margin: 0;
 }
 
-#innehåll a {
-  display: block;
-  padding: 10px;
-}
 
 #bars {
+  margin: auto auto;
   width: 30px;
+}
+
+#bars hr {
+  margin: 10px 0;
 }
 
 #hamburgarmeny {
   display: none;
   position: absolute;
   box-sizing: border-box;
+  justify-content: center;
   height: 60px;
   width: 60px;
   border: 1px solid transparent;
-  top: 35px;
   right: 50px;
   border-radius: 5px;
   box-shadow: 0 0 2px black;
+}
+
+/* Dropdown meny för hamburgarmenyn */
+#innehåll {
+  display: none;
+  background-color: whitesmoke;
+  list-style: none;
+  position: absolute;
+  top: 59px; /* Förhåller sig till hamburgarmenyn som är 60px hög, -1px för bättre klickyta */
+  border-radius: 3px;
+  box-shadow: 0 0 5px black;
+  margin: 0px; /* Fixar ett oförutsett fel på /tjänster */
+  right: -20px;
+}
+
+#innehåll a {
+  display: block;
+  padding: 10px;
 }
 
 #hamburgarmeny:hover,
@@ -161,11 +185,7 @@ a:visited {
   z-index: 1;
 }
 
-#innehåll {
-  position: absolute;
-  top: 59px;
-}
-
+/* Definerar ytan för huvudinnehållet på alla sidor */
 main {
   grid-column-start: 1;
   grid-column-end: 13;
@@ -176,17 +196,18 @@ main {
   text-align: center;
 }
 
+/* Definerar ytan för footern */
 footer {
   display: grid;
   grid-column-start: 1;
   grid-column-end: 13;
+  grid-row-start: 4;
+  grid-row-end: 5;
   min-height: 100px;
   /* border-left: 1px solid #333;
     border-right: 1px solid #333;
     border-bottom: 1px solid #333; */
-  background-color: #3e885a;
-  grid-row-start: 4;
-  grid-row-end: 5;
+  background-color: var(--green-bg-color);
   align-content: center;
   justify-content: space-evenly;
 }
@@ -214,16 +235,13 @@ footer {
   grid-row-end: 2;
 }
 
+/* Visar hamburgarmenyn vid en 810px och under */
 @media only screen and (max-width: 810px) {
   #hamburgarmeny {
     display: flex;
   }
 
-  #hem,
-  #tjanster,
-  #referenser,
-  #oss,
-  #kontakt {
+  .knappar {
     display: none;
   }
 
