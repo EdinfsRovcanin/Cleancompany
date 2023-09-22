@@ -218,14 +218,13 @@ em {
   #innehåll {
     margin-top: 0px;
   }
-  .bannerText {
-    font-size: 35px;
-  }
-
   a:link,
   a:hover,
   a:visited {
     text-decoration: none;
     color: black;
   } */
+  .bannerText {
+    font-size: 35px;
+  }
 }
