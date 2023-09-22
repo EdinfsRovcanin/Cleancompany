@@ -1,5 +1,7 @@
+/* Inclusive sans import */
 @import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap');
 
+/* Sammanhängande font och färger för alla sidor */
 :root {
   font-family: 'Inclusive Sans', sans-serif;
   --green-bg-color: #3e885a;

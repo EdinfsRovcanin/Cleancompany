@@ -61,10 +61,6 @@ html {
   box-shadow: 0px 3px 20px 0 rgb(131, 131, 131);
 }
 
-.containerleft {
-  box-sizing: border-box;
-}
-
 .containerright,
 .containerleft {
   /* margin:0 0 4vh 0; */
@@ -103,6 +99,7 @@ li {
   text-align: center;
 }
 
+/* Knapparna för "Beställ" i "lådorna" */
 button {
   font-family: "Inclusive Sans", sans-serif;
   color: white;
@@ -123,11 +120,14 @@ button:hover {
   box-shadow: 0 0 1px black;
 }
 
+/* Ett id på sista sektionen av lådor, skapar ett jämt mellanrum mellan allt på sidan tillsammans med row-gap i .flex */
 #last {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
-/* Responsivitet till medelstora skärmar sker genom en automatiskt flexwrap istället för media querie */
+/* Responsivitet till medelstora skärmar sker genom en automatiskt flexwrap istället för media queries */
+
+
 /* @media only screen and (max-width: 1200px) {
     [class*="box"] {
         min-width: 200px;
@@ -142,6 +142,16 @@ button:hover {
         margin: 0 10% 5% auto;
     }
 } */
+
+
+
+/* Fix för att inte få en horisontell scroll på smala enheter */
+@media only screen and (max-width: 810px) {
+  .containerleft,
+  .containerright {
+    min-width: 405px;
+  }
+}
 
 @media only screen and (max-width: 700px) {
   #bannertext {
@@ -175,7 +185,7 @@ button:hover {
   }
 
   .box2 {
-    order: -1; /* För att få bilden att ligga överst */
+    order: -1; /* För att få bilderna att ligga överst */
     height: 300px;
   }
 }
