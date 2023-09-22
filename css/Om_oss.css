@@ -14,20 +14,13 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #3e885a;
+  background-color: var(--green-bg-color);
   color: white;
   min-height: 30px;
   /* border: 1px solid black; */
 }
 
-a:link,
-a:hover,
-a:visited {
-  text-decoration: none;
-  color: black;
-}
-
-.containerMT {
+.containerAll {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
@@ -69,7 +62,8 @@ section {
 }
 .secondBannerText {
   text-align: center;
-  color: #53c85f;
+  color: var(--bannerTextColor);
+  color: var();
 }
 
 .bannerText:hover {
@@ -210,7 +204,7 @@ em {
 }
 
 @media only screen and (max-width: 810px) {
-  #hamburgarmeny {
+  /* hamburgermenu test #hamburgarmeny {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -227,4 +221,11 @@ em {
   .bannerText {
     font-size: 35px;
   }
+
+  a:link,
+  a:hover,
+  a:visited {
+    text-decoration: none;
+    color: black;
+  } */
 }
