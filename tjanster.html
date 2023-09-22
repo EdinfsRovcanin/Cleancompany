@@ -39,7 +39,7 @@
     <main>
         <div class="flex"> <!-- Mycket sker genom flex här :) -->
             <section class="flex topsection"> <!-- Banner med text, bakgrund och 2 länkar till andra delar av samma sida -->
-                <h1 id="bannertext">En ren och välstädad miljö gynnar både sinne och kropp</h1>
+                <h1>En ren och välstädad miljö gynnar både sinne och kropp</h1>
                 <a class="flex" id="privat" href="#privatlink">
                     <h2>Privatperson</h2>
                 </a>
@@ -53,29 +53,34 @@
             <section class="flex"> <!-- Inkapslade är totalt 2 grupper med 2 lådor var -->
                 <div class="flexdirection containerleft"> <!-- 2 lådor, ena med text och den andra med en bild -->
                     <div class="box">
-                        <h2>Hemstädning</h2>
-                        <p>En ytlig städning av det vanligaste i hemmet. Hyr oss en gång eller skapa en långtidsplan med oss!</p>
-                        <ul>
-                            <li>Alla rum</li>
-                            <li>Kök</li>
-                            <li>Badrum</li>
-                            <li>Fönster</li>
-                        </ul>
+                        <div> <!-- Div för att separera all text från knappen -->
+                            <h2>Hemstädning</h2>
+                            <p>En ytlig städning av det vanligaste i hemmet. Hyr oss en gång eller skapa en långtidsplan med oss!</p>
+                            <ul>
+                                <li>Alla rum</li>
+                                <li>Kök</li>
+                                <li>Badrum</li>
+                                <li>Fönster</li>
+                                <li>Golv</li>
+                            </ul>
+                        </div>
                         <button onclick="window.location.href='kontakt.html';">Beställ</button> <!-- knapp som länkar till kontakt.html -->
                     </div>
                     <img class="box2" src="bilder/rent-kök.jpg" alt="Renstädat kök">
                 </div>
                 <div class="flexdirection containerright"> <!-- Sista 2 lådorna för denna sektion, ena med text och den andra med en bild -->
                     <div class="box">
-                        <h2>Flyttstädning</h2>
-                        <p>En noggran städning av alla<br> hemmets ytor och vrår.</p>
-                        <ul>
-                            <li>Alla rum</li>
-                            <li>Kök</li>
-                            <li>Badrum</li>
-                            <li>Fönster</li>
-                        </ul>
-                        <br>
+                        <div>
+                            <h2>Flyttstädning</h2>
+                            <p>En noggran städning av alla hemmets ytor och vrår.</p>
+                            <ul>
+                                <li>Alla rum</li>
+                                <li>Kök</li>
+                                <li>Badrum</li>
+                                <li>Fönster</li>
+                                <li>Golv</li>
+                            </ul>
+                        </div>
                         <button onclick="window.location.href='kontakt.html';">Beställ</button>
                     </div>
                     <img class="box2" src="bilder/utflytt.jpg" alt="Utflytt">
@@ -84,25 +89,30 @@
             <section class="flex"> <!-- Repetition av ovanstående sektion med ändrad text och bild -->
                 <div class="flexdirection containerleft">
                     <div class="box">
-                        <h2>Fönsterputs</h2>
-                        <p>Skinande rena fönster.</p>
-                        <ul>
-                            <li>Fönster</li>
-                        </ul>
+                        <div>
+                            <h2>Fönsterputs</h2>
+                            <p>Få skinande rena fönster med vårat erbjudande för Fönsterputs.</p>
+                            <ul>
+                                <li>Fönster</li>
+                            </ul>
+                        </div>
                         <button onclick="window.location.href='kontakt.html';">Beställ</button>
                     </div>
                     <img class="box2" src="bilder/fönsterputs.jpg" alt="Fönsterputs">
                 </div>
                 <div class="flexdirection containerright">
                     <div class="box">
-                        <h2>Storstädning</h2>
-                        <p>En genomgående städning som lämnar din lägenhet som ny.</p>
-                        <ul>
-                            <li>Alla rum</li>
-                            <li>Kök</li>
-                            <li>Badrum</li>
-                            <li>Fönster</li>
-                        </ul>
+                        <div>
+                            <h2>Storstädning</h2>
+                            <p>En genomgående städning som lämnar din lägenhet som ny.</p>
+                            <ul>
+                                <li>Alla rum</li>
+                                <li>Kök</li>
+                                <li>Badrum</li>
+                                <li>Fönster</li>
+                                <li>Golv</li>
+                            </ul>
+                        </div>
                         <button onclick="window.location.href='kontakt.html';">Beställ</button>
                     </div>
                     <img class="box2" src="bilder/Storstädning2.jpg" alt="Storstädning">
@@ -114,61 +124,65 @@
             <section class="flex"> <!-- Repetition av ovanstående sektion med ändrad text och bild -->
                 <div class="flexdirection containerleft">
                     <div class="box">
-                        <h2>Konstorsstädning</h2>
-                        <p>Profesionell städning för ditt företag</p>
-                        <ul>
-                            <li>Alla rum</li>
-                            <li>Kök</li>
-                            <li>Badrum</li>
-                            <li>Fönster</li>
-                        </ul>
+                        <div>
+                            <h2>Konstorsstädning</h2>
+                            <p>Profesionell städning för ditt företag.</p>
+                            <ul>
+                                <li>Alla rum</li>
+                                <li>Kök</li>
+                                <li>Badrum</li>
+                                <li>Fönster</li>
+                                <li>Golv</li>
+                            </ul>
+                        </div>
                         <button onclick="window.location.href='kontakt.html';">Beställ</button>
                     </div>
                     <img class="box2" src="bilder/Facility, windows.png" alt="Renstädat kök">
                 </div>
                 <div class="flexdirection containerright">
                     <div class="box">
-                        <h2>Konstorsstädning</h2>
-                        <p>Profesionell städning för ditt företag</p>
-                        <ul>
-                            <li>Alla rum</li>
-                            <li>Kök</li>
-                            <li>Badrum</li>
-                            <li>Fönster</li>
-                        </ul>
+                        <div>
+                            <h2>Golvvård</h2>
+                            <p>Polera upp golven för både kundernas och eran egen skull.</p>
+                            <ul>
+                                <li>Golv</li>
+                            </ul>
+                        </div>
                         <button onclick="window.location.href='kontakt.html';">Beställ</button>
                     </div>
-                    <img class="box2" src="bilder/Facility, windows.png" alt="Renstädat kök">
+                    <img class="box2" src="bilder/Floor-Cleaning.jpg" alt="Renstädat kök">
                 </div>
             </section>
             <section id="last" class="flex">
                 <div class="flexdirection containerleft">
                     <div class="box">
-                        <h2>Konstorsstädning</h2>
-                        <p>Profesionell städning för ditt företag</p>
+                        <div>
+                        <h2>Fönsterputs</h2>
+                        <p>Få skinande rena fönster på erat kontor med våran professionella fönsterputs.</p>
                         <ul>
-                            <li>Alla rum</li>
-                            <li>Kök</li>
-                            <li>Badrum</li>
                             <li>Fönster</li>
                         </ul>
+                        </div>
                         <button onclick="window.location.href='kontakt.html';">Beställ</button>
                     </div>
-                    <img class="box2" src="bilder/Facility, windows.png" alt="Renstädat kök">
+                    <img class="box2" src="bilder/fönsterputs.jpg" alt="Renstädat kök">
                 </div>
                 <div class="flexdirection containerright">
                     <div class="box">
-                        <h2>Konstorsstädning</h2>
-                        <p>Profesionell städning för ditt företag</p>
+                        <div>
+                        <h2>Byggstädning</h2>
+                        <p>Vi ser till att hålla eran byggarbetsplats ren både under konstruktion och efter.</p>
                         <ul>
                             <li>Alla rum</li>
                             <li>Kök</li>
                             <li>Badrum</li>
                             <li>Fönster</li>
+                            <li>Golv</li>
                         </ul>
+                        </div>
                         <button onclick="window.location.href='kontakt.html';">Beställ</button>
                     </div>
-                    <img class="box2" src="bilder/Facility, windows.png" alt="Renstädat kök">
+                    <img class="box2" src="bilder/Byggstäd.jpg" alt="Renstädat kök">
                 </div>
             </section>
         </div>
