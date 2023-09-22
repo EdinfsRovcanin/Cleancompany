@@ -1,162 +1,122 @@
 @import "variables.css";
 
-.container {
-    
+.container2 {
     padding: 0px 40px 0 40px
 }
-.bildruta1 img {
-  width: 100%;
-  height: 100%;
-  /* object-fit: cover; Låter bilden täcka hela området utan att sträcka eller krossa proportionerna  */
+.kontakt {
+    display: grid;
+    margin: 25px 0;
+    grid-template-columns: 1fr 1fr;
 }
-.kontakt {display: grid;
-	margin: 25px 0;
-    grid-template-columns:1fr 1fr; 
-    flex: 1; /* För att kolumnerna ska dela på utrymmet jämnt */
-    flex-shrink: 0; /* För att förhindra krympning av kolumnerna */
-    ;
-}
-    /* object-fit: cover; Låter bilden täcka hela området utan att sträcka eller krossa proportionerna  */
-
-header { 
-
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #3E885A;
-        color: white;
-        font-weight:600;
-        grid-column-start: 1;
-        grid-column-end: 13;
-
-        height: 30px;
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3E885A;
+    color: white;
+    font-weight: 600;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    height: 30px;
 }
 .left1 {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
-    background-image: url(../bilder/blueone.jpg); 
-    background-size:cover;
+    background-image: url(../bilder/laptopmedpenna.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
-    /* max-width: 550px; */
-    /* margin: 20px 25px 25px 0px; */
-    /* border: 1px solid rgb(231, 238, 236); */
-    /* background-size: cover; */
-    background-color: #d0dae4;
-    /* margin-left: 80px; */ 
+    background-color: #f5f6f8;
 }
 .ikoner {
     display: flex;
     flex-direction: column;
-    justify-self:start;
-    margin-top: 50px;
+    justify-self: end;
+    margin-top: 35px;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
     max-width: 300px;
-    margin-left: 80px;
-    /* border: 3px solid white; */
+    margin-right: 20px;
 }
 .ikoner img {
     width: 25px;
     height: 25px;
     margin-top: 10px;
-    margin-left: 35px; 
+    margin-left: 35px;
 }
-.ikoner >div {
+.ikoner>div {
     display: flex;
     margin-top: 0px;
 }
 #adress {
-    margin-top:20px;
+    margin-top: 20px;
 }
-#telefon p{
+#telefon p {
     margin-left: 5px;
 }
-#email p{
+#email p {
     margin-left: 5px;
 }
-#facebook p{
+#facebook p {
     margin-left: 0px;
 }
-#instagram p{
+#instagram p {
     margin-left: 5px;
 }
 .right1 {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
-    grid-row-end:2;
-    background-color: #d0dae4;
-    background-image: url(../bilder/bluonebig.jpg);
-    /* background-size:cover; */
+    grid-row-end: 2;
+    background-color: #f5f6f8;
     background-repeat: no-repeat;
-    /* width: 550px; */
-    /* margin: 20px 0px 25px 25px; */
-    /* border: 1px solid rgb(231, 238, 236); */
     margin-left: 20px;
 }
+
 .form1 {
     display: flex;
-    grid-template-columns: repeat(12, 1fr);;
-    display:grid;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
     margin-left: 10px;
-    /* padding: 10px; */
-    /* padding-left: 100px;   */
-    flex: 1; /* För att kolumnerna ska dela på utrymmet jämnt */
-    flex-shrink: 0;  
-    row-gap: 25px;   
+    row-gap: 25px;
     border: none;
-}   
-/* input {
-    width: 140px;
-} */
+}
 #radio {
     width: 95px;
 }
-#fyll { 
+#fyll {
     text-align: left;
-    margin-left: 10px;  
+    margin-left: 10px;
 }
-#choose {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    display: flex;
-   margin-bottom: 0;
-   font-style: oblique; 
-} 
 #labelruta {
     width: 200px;
 }
 label:nth-child(1n) {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 label:nth-child(2n) {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 label:nth-child(3n) {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
 }
 label:nth-child(4n) {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 4;
-    grid-row-end: 5;  
+    grid-row-end: 5;
 }
 label:nth-child(5n) {
     grid-column-start: 3;
@@ -213,142 +173,91 @@ label:nth-child(12n) {
     grid-row-end: 11;
 }
 #skicka {
-  min-width: 285px;
+    min-width: 285px;
 }
 label {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 input {
-  min-height: 2em;
+    min-height: 2em;
 }
 #select {
-  width: 13em;
-  min-height: 2em;
+    width: 13em;
+    min-height: 2em;
 }
 #policy {
-    text-align: left;  
-    margin-left: 10px; 
+    text-align: left;
+    margin-left: 10px;
 }
 #samtycke {
-  margin-top: 0;
+    margin-top: 0;
 }
 a {
-  color: black;
+    color: black;
 }
-
-.ikoner2 img {
-    width: 25px;
-    height: 25px;
-    margin-top: 10px;
-    margin-left: 35px; 
+@media (max-width: 1200px) {
+    .container {
+        padding: 0px;
+    }
+    .left1 {
+        margin-left: 0px;
+        background-size: contain;
+    }
+    .ikoner {
+        justify-self: center;
+        justify-content: start;
+    }
+    .right1 {
+        margin-left: 20px;
+    }
+    .kontakt {
+        padding: 0px 20px 0 5px;
+    }
 }
-.ikoner2 {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    display: flex;
-    margin-top: 0px;
+@media (max-width: 960px) {
+    .ikoner {
+        margin-top: 0;
+    }
+    #formrubrik {
+        text-align: left;
+        margin-left: 10px;
+    }
+    #fyll p {
+        overflow-wrap: break-word;
+    }
+    #skicka {
+        min-width: 200px;
+    }
 }
-    @media (max-width: 1100px) {
-        .left1 {
-            margin-left: 0px;
+@media (max-width: 768px) {
+    .kontakt {
+        grid-template-columns: 1fr
     }
-        .right1 {
-            margin-left: -35px;
-        }
-        .kontakt {
-            padding: 0px 20px 0 5px;
-        }
+    .form1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-    @media (max-width: 960px) {
-
-        #formrubrik {
-            text-align: left;
-            margin-left: 10px;
-        }
-        #fyll p{
-            overflow-wrap: break-word;
-        }
-        label:nth-child(5n) {
-            grid-column-start: 1;
-            grid-column-end: 3;
-            grid-row-start: 5;
-            grid-row-end: 6;
-        }
-        label:nth-child(6n) {
-            grid-column-start: 1;
-            grid-column-end: 3;
-            grid-row-start: 6;
-            grid-row-end: 7;
-        }
-        label:nth-child(7n) {
-            grid-column-start: 1;
-            grid-column-end: 3;
-            grid-row-start: 7;
-            grid-row-end: 8;
-        }
-        label:nth-child(8n) {
-            grid-column-start: 1;
-            grid-column-end: 3;
-            grid-row-start: 8;
-            grid-row-end: 9;
-        }
-        label:nth-child(9n) {
-            grid-column-start: 1;
-            grid-column-end: 3;
-            grid-row-start: 9;
-            grid-row-end: 10;
-        }
-        label:nth-child(10n) {
-            grid-column-start: 1;
-            grid-column-end: 3;
-            grid-row-start: 10;
-            grid-row-end: 11;
-        }
-        label:nth-child(11n) {
-            grid-column-start: 1;
-            grid-column-end: 3;
-            grid-row-start: 11;
-            grid-row-end: 12;
-        }
-        label:nth-child(12n) {
-            grid-column-start: 1;
-            grid-column-end: 3;
-            grid-row-start: 12;
-            grid-row-end: 13;
-        }
-        label:nth-child(13n) {
-            grid-column-start: 1;
-            grid-column-end: 5;
-            grid-row-start: 13;
-            grid-row-end: 14;
-        }
-        #skicka {
-            min-width: 200px;
-        }
+    .right1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        margin-left: 0;
+        margin-top: 25px;
     }
-    @media (max-width: 768px) {
-        .right1 {
-            grid-column-start: 1;
-            grid-column-end: 2;
-            grid-row-start: 2;
-            grid-row-end:3;
-            margin-left:0;
-            margin-top: 25px;
-        }
-        .ikoner {
-            display: flex;
-            flex-direction: column;
-            justify-self:end;
-            margin-top: 1px;
-            margin-right: 50px;
-        }
-        .left1 {
-            background-image: url(../bilder/bluoneonlycolor.jpg);
-            background-repeat: repeat;
-            
-        }
-        
-
-
+    #select {
+        margin-right:20px
     }
+    #adress {
+        margin-top: 0;
+    }
+    #labelselect {
+        display: flex;
+        margin-right: 20px;
+    }
+    #lankar {
+        text-decoration: underline;
+    }
+}
